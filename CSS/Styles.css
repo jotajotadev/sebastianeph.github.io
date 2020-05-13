@@ -1,4 +1,37 @@
+body{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+nav{
+    background-color:  #363636;
+    margin-left: 50px;
+    /* margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 20px; */
+    margin: 100px 20px; /*[arriba abajo] [derecha izquierda]*/
+    padding: 10px;
+
+
+}
+h1{
+    color: red;
+
+}
 h2{
 
-    color: red;
+    color: greenyellow;
 }
+#sub{
+
+    color:  blue;
+}
+#sub2{
+    color: rebeccapurple;
+}
+
+.azul{
+    color: aqua;
+
+}
+
