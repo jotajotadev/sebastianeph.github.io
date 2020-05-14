@@ -1,0 +1,15 @@
+body{
+    color: white;
+    background: black;
+} 
+a{
+    color: red;
+    margin: 10px;
+}
+.nav{
+    display: flexbox;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+
+}
