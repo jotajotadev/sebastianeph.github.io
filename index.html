@@ -34,17 +34,23 @@
 				</h2>
 				<div class="contenedor-habilidad">
 					<p class="nombre-habilidad"><em>C#</em></p>
-					<input class="rango-habilidad" type="range" value="80">
+					<div class="contenedor-progreso">
+						<div class="progreso"></div>
+					</div>
 					<p class="valor-habilidad"><span>80%</span></p>
 				</div>
 				<div class="contenedor-habilidad">
 					<p class="nombre-habilidad"><em>Java</em></p>
-					<input class="rango-habilidad" type="range" value="50">
+					<div class="contenedor-progreso">
+						<div class="progreso dos"></div>
+					</div>
 					<p class="valor-habilidad"><span>50%</span></p>
 				</div>
 				<div class="contenedor-habilidad">
 					<p class="nombre-habilidad"><em>Photoshop</em></p>
-					<input class="rango-habilidad" type="range" value="100">
+					<div class="contenedor-progreso">
+						<div class="progreso tres"></div>
+					</div>
 					<p class="valor-habilidad"><span>100%</span></p>
 				</div>
 				<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
@@ -55,49 +61,50 @@
 	<div class="contenedor-B">
 		<article class="contenedor-proyectos">
 			<h2 class="sub-titulo">Proyectos</h2>
-			<section class="contenedor-proyectos">
-				<p class="categoria"><strong>Nombre del Proyecto</strong></p>
+			<section class="item-proyectos">
+				<p class="categoria proyecto"><strong>Nombre del Proyecto</strong></p>
 				<p class="descripcion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
+				<p><a class="boton" href="#">ver proyecto</a></p>
 			</section>
-			<hr class="linea-divisora"/> <!--No borrar importante para semantica-->
-			<section class="contenedor-prouevtos">
+			
+			<section class="item-proyectos">
 				<p class="categoria"><strong>Nombre del Proyecto 2</strong></p>
 				<p class="descripcion-proyecto">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
+				<p><a class="boton" href="#">ver proyecto</a></p>
 			</section>
 			<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
 		</article>
 		
 		<article class="contenedor-estudios">
 			<h2 class="sub-titulo">Estudios</h2>
-			<section class="contenedor-estudios">
+			<section class="item-estudios">
 				<div class="divisor-estudios">
 					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
 					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
-					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
-					<p><a class="boton" href="#">ver proyecto</a></p>
+					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>			
 				</div>
 				<div class="divisor-estudios">
 					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
 					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
 					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
-					<p><a class="boton" href="#">ver proyecto</a></p>
 				</div>
 				<div class="divisor-estudios">
 					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
 					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
 					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
-					<p><a class="boton" href="#">ver proyecto</a></p>
-				</div>
-				<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
+				</div>				
 			</section>
+			<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
 		</article>
 	</div>
 
 	<footer class="pie">
 		<h2 class="sub-titulo">Contacto</h2>
-		<p class="red-social"><a href="#"><i class="icon fab fa-instagram"></i></a></p>
-		<p class="red-social"><a href="#"><i class="icon fab fa-github"></i></a></p>
-		<p class="red-social"><a href="#"><i class="icon fab fa-facebook"></i></a></p>
+		<div class="contenedor-red-social">
+			<p class="red-social"><a href="#"><i class="icon fab fa-instagram"></i></a></p>
+			<p class="red-social"><a href="#"><i class="icon fab fa-github"></i></a></p>
+			<p class="red-social"><a href="#"><i class="icon fab fa-facebook"></i></a></p>
+		</div>
 	</footer>
 </body>
 </html>
