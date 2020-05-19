@@ -1,0 +1,176 @@
+/*  Fuentes a Usar
+font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+*/
+.sub-titulo {
+    color: var(--sub-title-color, #F00);
+    font-family: "Inconsolata", monospace;
+    font-size: 1.8;
+}
+.categoria {
+    font-family: "Inconsolata", monospace;
+    font-weight: 100;
+    font-size: 1.1;
+}
+.titulo-principal {
+    font-family: "Inconsolata", monospace;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2em;
+}
+[class*="descripcion"] {
+    font-family: 'Lato', sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 1px solid var(--button-color-primary, #0070CA);
+    font-size: 0.9em; 
+}
+.icon {
+    color: var(--sub-title-color, #F00);
+}
+.boton {
+    background-color: var(--button-color-primary, #0070CA);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: var( --text-color, #fff);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+}
+body {
+    background-color: var(--background-color, #333);
+}
+.contenedor-A, .contenedor-B{
+    background-color: var( --background-items, #000);
+    color: var( --text-color, #fff); /*revisar si se puede optmizar*/
+    border-radius: 0.7em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+.contenedor-A {
+    max-width: 460px;
+    margin-top: 1em;
+    overflow: hidden;
+}
+.contenedor-foto {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contenedor-foto img {
+    width: 100%;
+    max-width: 460px;
+}
+.contenedor-logo {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 10;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.descripcion-foto {
+    position: absolute;
+    left: 23px;
+    bottom: 25px;
+    padding: 0.5em 1em 0.5em 3em;
+    border-radius: 1em;
+    background-color: var( --background-items, #000);
+}
+.contenedor-portafolio .categoria{
+    color: var(--sub-title-color, #F00);
+}
+.contenedor-portafolio {
+    padding: 1.2em;
+}
+.linea-divisora {
+    color: var(--line-through, #66CC33);
+}
+.contenedor-habilidad {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-habilidad + p {
+    display: flex;
+    justify-content: center;
+}
+.contenedor-habilidad em {
+    font-style: normal;
+}
+.nombre-habilidad, .valor-habilidad {
+    margin-top: 0;
+}
+.contenedor-progreso {
+    margin-right: 1em;
+    margin-left: 1em;
+    background: var(--progres-background, #eee);
+    max-width: 100%;
+    height: 1em;
+    border-radius: 1em;
+}
+.progreso {
+    background: var(--line-through,  #66CC33);
+    height: 1em;
+    width: 80%;
+    border-radius: 1em;
+}
+.progreso.dos {
+    width: 50%;
+}
+.progreso.tres {
+    width: 100%;
+}
+.valor-habilidad {
+    align-self: flex-end;
+}
+/* 
+este comentario divide los estilos de la seccion lateral derecha
+ de guia no borrar gracias.
+*/
+.contenedor-B {
+    padding: 1em;
+}
+.item-proyectos .boton {
+    background-color: var(--button-color-secondary, #FF9933);
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.item-proyectos + p {
+    display: flex;
+    justify-content: center;
+}
+.item-estudios + p {
+    display: flex;
+    justify-content: center;
+}
+.fecha-estudios {
+    font-family: 'Lato', sans-serif;
+    color: var(--sub-title-color, #F00);
+}
+.pie {
+    padding-top: 0.1px; /*no borrar*/
+    padding-bottom: 4em;
+    background-color: var( --text-color, #fff);
+}
+.pie .sub-titulo {
+    color: black;
+    text-align: center;
+}
+.contenedor-red-social {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-red-social .icon {
+    color: black;
+    margin: 0.5em;
+    font-size: 2em;
+}
