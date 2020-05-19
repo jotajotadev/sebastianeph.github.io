@@ -1,5 +1,22 @@
+/*  Fuentes a Usar
+font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+*/
 .sub-titulo {
-    color: red;
+    color: var(--sub-title-color, #F00);
+    font-family: "Inconsolata", monospace;
+}
+.categoria {
+    font-family: "Inconsolata", monospace;
+    font-weight: 100;
+}
+.titulo-principal {
+    font-family: "Inconsolata", monospace;
+    font-weight: 800;
+    text-align: center;
+}
+.icon {
+    color: var(--sub-title-color, #F00);
 }
 body {
     background-color: var(--background-color, #333);
@@ -15,6 +32,7 @@ body {
 .contenedor-A {
     max-width: 460px;
     margin-top: 1em;
+    overflow: hidden;
 }
 .contenedor-foto {
     margin: 0;
@@ -44,6 +62,9 @@ body {
     padding: 0.5em 1em 0.5em 3em;
     border-radius: 1em;
     background-color: var( --background-items, #000);
+}
+.categoria strong{
+    color: var(--sub-title-color, #F00);
 }
 .contenedor-portafolio {
     padding: 1.2em;
