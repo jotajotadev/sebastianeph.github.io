@@ -2,6 +2,15 @@
 font-family: 'Inconsolata', monospace;
 font-family: 'Lato', sans-serif;
 */
+.show-nav {
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 82px;
+    left: 0;
+    right: 0;
+
+}
 .sub-titulo {
     color: var(--sub-title-color, #F00);
     font-family: "Inconsolata", monospace;
@@ -40,17 +49,74 @@ font-family: 'Lato', sans-serif;
 body {
     background-color: var(--background-color, #333);
 }
+.background-header {
+    background-color: var(--background-items, #000);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20; /*Tener cuidado hay un z-index de 10*/
+}
+.header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1366px; /*ancho de pantalla mas usado actualmente*/
+    background-color: var(--background-items, #000);
+    display: flex;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    position:relative;
+}
+.logo-header {
+    width: 50px;
+    height: 50px;
+}
+.icon-menu {
+    background-color: white;
+}
+.navegacion {
+    display: none;
+}
+.contenedor-item {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.item a {
+    display: block;
+    padding: 0.5em 1em;
+    color: var(--text-color, #fff);
+    text-decoration: none;
+    background-color: var(--button-color-primary, #0070CA);
+    border-radius: 1em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.item a:hover {
+    background-color: var(--text-color, #fff);
+    font-weight: 800;
+    color: var(--button-color-primary, #0070CA);
+}
+.contenedor-layout {
+    margin-top: 98px;
+}
 .contenedor-A, .contenedor-B{
     background-color: var( --background-items, #000);
     color: var( --text-color, #fff); /*revisar si se puede optmizar*/
     border-radius: 0.7em;
     margin-right: 1em;
     margin-left: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 .contenedor-A {
-    max-width: 460px;
-    margin-top: 1em;
     overflow: hidden;
 }
 .contenedor-foto {
@@ -59,9 +125,8 @@ body {
     flex-direction: column;
     position: relative;
 }
-.contenedor-foto img {
-    width: 100%;
-    max-width: 460px;
+.img-portada {
+    max-width: 100%; /*imagen responsive no borrar*/
 }
 .contenedor-logo {
     position: absolute;
@@ -173,4 +238,35 @@ este comentario divide los estilos de la seccion lateral derecha
     color: black;
     margin: 0.5em;
     font-size: 2em;
+}
+
+@media (min-width:600px){
+    .contenedor-layout {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1366px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media (min-width:650px) {
+    .icon-menu {
+        display: none;
+    }
+    .navegacion {
+        display: block;
+    }
+    .contenedor-item {
+        flex-direction: row;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .item a {
+        margin-left: 1em;
+        margin-bottom: 0;
+    }
 }

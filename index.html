@@ -10,92 +10,110 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&family=Lato&display=swap" rel="stylesheet">	
 </head>
 <body>
-	<main class="contenido-principal">
-		<article class="contenedor-A">
-			<figure class="contenedor-foto">
-				<img src="images/portada.jpg" alt="foto del portafolio">
-				<div class="contenedor-logo">
-					<img class="logo" src="images/logo-01.png" alt="logo de sebastian">
-				</div>
-				<figcaption class="descripcion-foto sub-titulo">Sebastian PH</figcaption>
-			</figure>
+	<div class="background-header">
+		<header class="header">
+			<img src="images/logo-01.png" alt="" class="logo-header">
+			<nav class="navegacion" id="nav-id">
+				<ul class="contenedor-item">
+					<li class="item"><a href="#">Inicio</a></li>
+					<li class="item"><a href="#">Proyectos</a></li>
+					<li class="item"><a href="#">Estudios</a></li>
+					<li class="item"><a href="#">Contacto</a></li>
+					<li class="item"><a href="#">Habilidades</a></li>
+				</ul>
+			</nav>
+			<div class="icon-menu"><i class="fas fa-bars"></i></div>
+		</header>
+	</div>
 
-			<div class="contenedor-portafolio">
-				<h1 class="titulo-principal">Portafolio</h1>
-				<p class="categoria"><strong><i class="icon fas fa-user-tie"></i> Desarrollador Desktop</strong></p>
-				<p class="categoria"><strong><i class="icon fas fa-map-marker-alt"></i> Lima - Perú</strong></p>
-				<p class="categoria"><strong><i class="icon fas fa-envelope-open-text"></i> correo@ejemplo.com</strong></p>
-				<hr class="linea-divisora"/> <!--No borrar importante para semantica-->
-				<h2 class="sub-titulo">
-					Habilidades
-				</h2>
-				<div class="contenedor-habilidad">
-					<p class="nombre-habilidad"><em>C#</em></p>
-					<div class="contenedor-progreso">
-						<div class="progreso"></div>
+	<div class="contenedor-layout">
+		<main class="contenido-principal">
+			<article class="contenedor-A">
+				<figure class="contenedor-foto">
+					<img class="img-portada" src="images/portada.jpg" alt="foto del portafolio">
+					<div class="contenedor-logo">
+						<img class="logo" src="images/logo-01.png" alt="logo de sebastian">
 					</div>
-					<p class="valor-habilidad"><span>80%</span></p>
-				</div>
-				<div class="contenedor-habilidad">
-					<p class="nombre-habilidad"><em>Java</em></p>
-					<div class="contenedor-progreso">
-						<div class="progreso dos"></div>
+					<figcaption class="descripcion-foto sub-titulo">Sebastian PH</figcaption>
+				</figure>
+
+				<div class="contenedor-portafolio">
+					<h1 class="titulo-principal">Portafolio</h1>
+					<p class="categoria"><strong><i class="icon fas fa-user-tie"></i> Desarrollador Desktop</strong></p>
+					<p class="categoria"><strong><i class="icon fas fa-map-marker-alt"></i> Lima - Perú</strong></p>
+					<p class="categoria"><strong><i class="icon fas fa-envelope-open-text"></i> correo@ejemplo.com</strong></p>
+					<hr class="linea-divisora"/> <!--No borrar importante para semantica-->
+					<h2 class="sub-titulo">
+						Habilidades
+					</h2>
+					<div class="contenedor-habilidad">
+						<p class="nombre-habilidad"><em>C#</em></p>
+						<div class="contenedor-progreso">
+							<div class="progreso"></div>
+						</div>
+						<p class="valor-habilidad"><span>80%</span></p>
 					</div>
-					<p class="valor-habilidad"><span>50%</span></p>
-				</div>
-				<div class="contenedor-habilidad">
-					<p class="nombre-habilidad"><em>Photoshop</em></p>
-					<div class="contenedor-progreso">
-						<div class="progreso tres"></div>
+					<div class="contenedor-habilidad">
+						<p class="nombre-habilidad"><em>Java</em></p>
+						<div class="contenedor-progreso">
+							<div class="progreso dos"></div>
+						</div>
+						<p class="valor-habilidad"><span>50%</span></p>
 					</div>
-					<p class="valor-habilidad"><span>100%</span></p>
+					<div class="contenedor-habilidad">
+						<p class="nombre-habilidad"><em>Photoshop</em></p>
+						<div class="contenedor-progreso">
+							<div class="progreso tres"></div>
+						</div>
+						<p class="valor-habilidad"><span>100%</span></p>
+					</div>
+					<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
 				</div>
+			</article>
+		</main>
+
+		<div class="contenedor-B">
+			<article class="contenedor-proyectos">
+				<h2 class="sub-titulo">Proyectos</h2>
+				<section class="item-proyectos">
+					<p class="categoria proyecto"><strong>Nombre del Proyecto</strong></p>
+					<p class="descripcion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
+					<p><a class="boton" href="#">ver proyecto</a></p>
+				</section>
+				
+				<section class="item-proyectos">
+					<p class="categoria"><strong>Nombre del Proyecto 2</strong></p>
+					<p class="descripcion-proyecto">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
+					<p><a class="boton" href="#">ver proyecto</a></p>
+				</section>
 				<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
-			</div>
-		</article>
-	</main>
-
-	<div class="contenedor-B">
-		<article class="contenedor-proyectos">
-			<h2 class="sub-titulo">Proyectos</h2>
-			<section class="item-proyectos">
-				<p class="categoria proyecto"><strong>Nombre del Proyecto</strong></p>
-				<p class="descripcion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
-				<p><a class="boton" href="#">ver proyecto</a></p>
-			</section>
+			</article>
 			
-			<section class="item-proyectos">
-				<p class="categoria"><strong>Nombre del Proyecto 2</strong></p>
-				<p class="descripcion-proyecto">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate nostrum nam recusandae ea nobis nesciunt sunt. Id, voluptatem animi nesciunt error debitis quod, quisquam, dolorum aperiam totam facilis qui.</p>
-				<p><a class="boton" href="#">ver proyecto</a></p>
-			</section>
-			<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
-		</article>
-		
-		<article class="contenedor-estudios">
-			<h2 class="sub-titulo">Estudios</h2>
-			<section class="item-estudios">
-				<div class="divisor-estudios">
-					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
-					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
-					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>			
-				</div>
-				<div class="divisor-estudios">
-					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
-					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
-					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
-				</div>
-				<div class="divisor-estudios">
-					<p class="categoria"><strong> Nombre de la Entidad</strong></p>
-					<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
-					<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
-				</div>				
-			</section>
-			<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
-		</article>
+			<article class="contenedor-estudios">
+				<h2 class="sub-titulo">Estudios</h2>
+				<section class="item-estudios">
+					<div class="divisor-estudios">
+						<p class="categoria"><strong> Nombre de la Entidad</strong></p>
+						<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
+						<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>			
+					</div>
+					<div class="divisor-estudios">
+						<p class="categoria"><strong> Nombre de la Entidad</strong></p>
+						<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
+						<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
+					</div>
+					<div class="divisor-estudios">
+						<p class="categoria"><strong> Nombre de la Entidad</strong></p>
+						<p class="fecha-estudios"><i class="icon far fa-calendar-alt"></i> 10/10/2020</p>
+						<p class="descripcion-estudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus nisi, iste vero corrupti dolorum!</p>
+					</div>				
+				</section>
+				<p><a class="boton" href="#">ver mas <i class="fas fa-chevron-down"></i></a></p>
+			</article>
+		</div>
 	</div>
 
 	<footer class="pie">
@@ -106,5 +124,6 @@
 			<p class="red-social"><a href="#"><i class="icon fab fa-facebook"></i></a></p>
 		</div>
 	</footer>
+	<script src="js/principal.js"></script>
 </body>
 </html>
